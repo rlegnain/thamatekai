@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent main layout from being scrollable */
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling in the container */
+  }
+  
+  /* Sidebar styles */
+  aside {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main content styles */
+  .col_2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  
+  header {
+    display: flex;
+    gap: 10px;
+    background-color: #f4f4f4;
+    color: #4981e7;
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    align-items: center;
+    height: 50px;
+  /*   justify-content: center; */
+  }
+  
+
+  
+  .input_message_box {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px; /* Ensure spacing between chat and input box */
+  }
+  
+  /* .input_message_box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input_message_box button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   */
+
+  #toggleSidebar {
+    background-color: none;
+    width: 32px;
+    height: 32px;
+  }
+  
+  
+  .message { 
+    padding: 10px 15px; 
+    border-radius: 10px; 
+    width: 80%; 
+    display: flex; 
+    align-items: start; 
+    gap: 10px; }
+  
+  
+  .message i { font-size: 1.5em; }
+  
+  
+  .ai-message { 
+    background-color: rgba(224, 247, 250, 0.4); 
+    align-self: flex-start; 
+  } 
+  .human-message {
+    background-color: rgba(209, 196, 233, 0.4); 
+    align-self: flex-end; 
+  }
